@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc && vite build --minify esbuild",
+    "preview": "vite preview --strictPort 5173"
   },
   "devDependencies": {
     "typescript": "^5.2.2",
