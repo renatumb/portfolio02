@@ -1,0 +1,243 @@
+.work {
+    text-align: center;
+}
+
+.work__title {
+    font-size: var(--size-2xl);
+    color: var(--color-light);
+}
+
+.work__desc {
+    font-size: var(--size-sm);
+    max-width: 60ch;
+    color: var(--color-slate600);
+    margin: 1rem auto;
+}
+
+.work__project-title {
+    font-size: var(--size-base);
+    margin-bottom: 1rem;
+}
+
+/* ---- */
+.work__img--wrapper {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.work__img--wrapper::after {
+    content: "";
+    background-color: rgba(246, 21, 70, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+}
+
+.work__img--wrapper:hover::after {
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 2px solid var(--color-rose);
+}
+
+/* ---- */
+.work__project:not(:last-child) {
+    margin-bottom: 5rem;
+}
+
+.work__project--desc1 {
+    font-size: var(--size-sm);
+    color: var(--color-slate600);
+    margin: 1rem 0;
+}
+
+.work__project--desc2 {
+    font-size: var(--size-sm);
+    color: var(--color-slate400);
+    margin-bottom: 1rem;
+}
+
+.work__project--btn {
+    font-size: var(--size-sm);
+}
+
+.work__project-subtitle {
+    display: none;
+}
+
+@media (min-width: 475px) {
+    .work__title {
+        font-size: var(--size-3xl);
+    }
+
+    .work__desc {
+        font-size: var(--size-base);
+        margin: 1.5rem auto;
+    }
+
+    .work__project-title {
+        font-size: var(--size-lg);
+        margin-bottom: 1.5rem;
+    }
+
+    .work__project--desc1,
+    .work__project--desc2 {
+        font-size: var(--size-base);
+        margin-bottom: 1.5rem;
+    }
+
+    .work__project--btn {
+        font-size: var(--size-base);
+    }
+}
+
+@media (min-width: 640px) {
+    .project__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        grid-template-areas:
+            'grid-img1      grid-content1'
+            'grid-content2  grid-img2'
+            'grid-img3      grid-content3'
+            'grid-content4  grid-img4'
+            'grid-img5      grid-content5';
+    }
+
+    .image1 {
+        grid-area: grid-img1;
+    }
+
+    .image2 {
+        grid-area: grid-img2;
+    }
+
+    .image3 {
+        grid-area: grid-img3;
+    }
+
+    .image4 {
+        grid-area: grid-img4;
+    }
+
+    .image5 {
+        grid-area: grid-img5;
+    }
+
+    .content1 {
+        grid-area: grid-content1;
+    }
+
+    .content2 {
+        grid-area: grid-content2;
+    }
+
+    .content3 {
+        grid-area: grid-content3;
+    }
+
+    .content4 {
+        grid-area: grid-content4;
+    }
+
+    .content5 {
+        grid-area: grid-content5;
+    }
+
+    .work__project-title {
+        display: none;
+    }
+
+    .work__project--desc1,
+    .work__project--desc2 {
+        font-size: var(--size-xs);
+        margin-bottom: 1rem;
+    }
+
+    .work__project--btn {
+        font-size: var(--size-xs);
+    }
+
+    .work__project:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .work__project-subtitle {
+        display: block;
+        font-size: var(--size-base);
+    }
+
+    .work__project {
+        padding: 0 1rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .work__project--desc1,
+    .work__project--desc2,
+    .work__project--btn {
+        font-size: var(--size-sm);
+    }
+
+    .work__project-subtitle {
+        font-size: var(--size-lg);
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .work__title {
+        font-size: var(--size-4xl);
+    }
+
+    .work__desc {
+        font-size: var(--size-lg);
+    }
+
+    .work__project--desc1,
+    .work__project--desc2,
+    .work__project--btn {
+        font-size: var(--size-base);
+    }
+
+    .work__project-subtitle {
+        font-size: var(--size-xl);
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .work__title {
+        font-size: var(--size-5xl);
+    }
+
+    .work__desc {
+        font-size: var(--size-xl);
+        margin: 2rem auto;
+    }
+
+    .work__project--desc1,
+    .work__project--desc2,
+    .work__project--btn {
+        font-size: var(--size-lg);
+    }
+
+    .work__project-subtitle {
+        font-size: var(--size-2xl);
+    }
+
+    .project__container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1536px) {
+    .project__container {
+        width: 70%;
+    }
+}
