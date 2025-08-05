@@ -1,0 +1,67 @@
+.footer_title {
+    font-size: var(--size-sm);
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-slate800);
+    font-weight: 800;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.icon-fill {
+    width: var(--size-sm);
+    height: auto;
+    display: inline;
+    margin: 0 1rem;
+    color: var(--color-rose);
+    vertical-align: middle;
+}
+
+@keyframes changeColor {
+    to {
+        color: greenyellow;
+    }
+}
+
+/**
+animation-name  ,
+animation-duration  ,
+animation-timing-function  ,
+animation-delay  ,
+animation-iteration-count  ,
+animation-direction  ,
+animation-fill-mode  ,
+animation-play-state  ,
+and animation-timeline  .
+*/
+
+.icon-fill-animate1 {
+    animation-name: changeColor;
+    animation-duration: .9s;
+    animation-delay: .5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+.icon-fill-animate2 {
+    animation: changeColor .9s alternate infinite;
+}
+
+@media (min-width: 475px) {
+}
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
+}
