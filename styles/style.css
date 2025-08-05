@@ -39,6 +39,18 @@ html {
     scroll-behavior: smooth;
 }
 
+.light-mode{
+    --color-dark: #f1f5f9;
+    --color-light: #1a2139;
+
+    --color-slate400: #1f365e;
+    --color-slate600: #2f4ea5;
+    --color-slate800: #94a3b8;
+
+    --color-rose: #ff1f53;
+    --color-indigo: #5149e6;;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     background: var(--color-dark);
