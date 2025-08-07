@@ -9,8 +9,11 @@ import '../styles/components/contact.css'
 import '../styles/components/footer.css'
 import '../styles/components/mobile-nav.css'
 import '../styles/utils.css'
+
 import showHideMobileNav from '../src/utils/mobile-nav.ts'
 import themeToggle from "./utils/theme-toggle.ts";
+import lazyLoadImages from "./utils/lazy-load-images.ts";
 
 showHideMobileNav();
 themeToggle();
+lazyLoadImages();
