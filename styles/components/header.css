@@ -5,6 +5,8 @@
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    z-index: 150;
+    position: relative;
 }
 
 .header__menu {

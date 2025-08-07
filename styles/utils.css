@@ -30,6 +30,15 @@
     margin-top: 5rem;
 }
 
+.loading {
+    filter: blur(40px);
+}
+
+.loaded {
+    filter: blur(0px);
+    transition: all 1s;
+}
+
 @media (min-width: 475px) {
     .container {
         max-width: 475px;
