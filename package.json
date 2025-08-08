@@ -4,11 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --strictPort --host",
-    "build": "tsc && vite build --minify esbuild",
+    "dev": "clear && vite --strictPort --host --port 5173",
+    "build": "clear && tsc && vite build --minify esbuild",
+    "build-convert": "clear && tsc && vite build --config vite.config-webp.ts --minify esbuild",
     "preview": "vite preview --host --strictPort --port 5173"
   },
   "devDependencies": {
+    "fs-extra": "^11.3.1",
+    "sharp": "^0.34.3",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
   }
