@@ -1,6 +1,7 @@
 import {defineConfig, Plugin} from 'vite';
 // @ts-ignore
 import fs from 'fs-extra';
+// @ts-ignore
 import path from 'path';
 import sharp from 'sharp';
 
